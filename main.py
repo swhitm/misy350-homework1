@@ -1,10 +1,3 @@
-# ============================================
-# Coffee Shop Kiosk Inventory & Orders (CRUD)
-# ============================================
-
-# -----------------------------
-# Starter Inventory Data
-# -----------------------------
 inventory = [
     {"item_id": 1, "name": "Espresso", "unit_price": 2.50, "stock": 40},
     {"item_id": 2, "name": "Latte", "unit_price": 4.25, "stock": 25},
@@ -13,17 +6,13 @@ inventory = [
     {"item_id": 5, "name": "Blueberry Muffin", "unit_price": 2.95, "stock": 18},
 ]
 
-# -----------------------------
-# Starter Orders Data
-# -----------------------------
+
 orders = [
     {"order_id": "Order_101", "item_id": 2, "quantity": 2, "status": "Placed", "total": 8.50},
     {"order_id": "Order_102", "item_id": 3, "quantity": 1, "status": "Placed", "total": 3.75},
 ]
 
-# ==========================================================
-# READ
-# ==========================================================
+
 
 # Query 0: View all items in the inventory with stock less than 20.
 
@@ -45,9 +34,7 @@ else:
     print("No low stock items.")
 
 
-# ==========================================================
-# CREATE
-# ==========================================================
+
 
 # Query 1: Place a new order for an item and quantity.
 
@@ -94,9 +81,7 @@ else:
 print(order_message)
 
 
-# ==========================================================
-# READ
-# ==========================================================
+
 
 # Query 2: View all orders placed for a particular item.
 
@@ -127,9 +112,7 @@ else:
         print(customer_order)
 
 
-# ==========================================================
-# READ
-# ==========================================================
+
 
 # Query 3: Total number of orders placed for "Cold Brew".
 
@@ -153,9 +136,7 @@ if target_item_id is not None:
 print(f"Total number of orders placed for '{target_name}': {order_count}")
 
 
-# ==========================================================
-# UPDATE
-# ==========================================================
+
 
 # Query 4: Update item stock quantity by item id.
 
@@ -179,9 +160,6 @@ else:
     print("Update failed: Item not found or invalid stock.")
 
 
-# ==========================================================
-# REMOVE / DELETE
-# ==========================================================
 
 # Query 5: Cancel an order and restore stock.
 
